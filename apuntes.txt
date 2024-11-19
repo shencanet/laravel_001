@@ -1,0 +1,25 @@
+\App\Models\User::create([
+    'name' => 'shen',
+    'email' => 'shen@shen.es',
+    'email_verified_at' => now(),
+    'password' => bcrypt('almera'),  // Usa bcrypt para encriptar la contraseña
+    'remember_token' => \Illuminate\Support\Str::random(10),
+]);
+
+
+
+php artisan tinker //crea user 
+
+php artisan serve // ejecuta server 8000 localhost
+
+php artisan install:api
+
+http://127.0.0.1:8000/api/students/1
+
+php artisan make:migration create_student_table
+
+php artisan migrate
+
+php artisan make:model Student
+
+php artisan make:controller studentController
